@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+          .then(res => res.text())
+          .then(data => document.getElementById('header').innerHTML = data);
+          </script>
+    <main>
+        <h1 class="baskerFont">Custom Cakes For Any Occasion</h1>
+        <section>
+            <div class="row">
+                <div class="column">
+                    <ul class="leftpic">
+                    <li><img src="Images/cookieMonster.jpeg" alt="leftTop"></li>
+                    <li><img src="Images/strawberry.jpeg" alt="leftBottom"></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <img src="Images/flowerTier.jpeg" alt="center">
+                </div>
+                <div class="column">
+                    <ul class="leftpic">
+                    <li><img src="Images/turtle.jpeg" alt="rightTop"></li>
+                    <li><img src="Images/pJackSkellington.jpeg" alt="rightBottom"></li>
+                </div>
+            </div>
+            </section>
+        <section>
+            <h1>About Me</h1>
+            <img class="homeabout" src="Images/464268696_18464090470032109_7090838865449949262_n.jpg" alt="about">
+            <p>This is an about Harley who is an amazing, wonderful, incredible human being. I feel bad for anybody who has not met her. They are missing out on life changing amazingness.</p>
+        </section>
+        <section>
+            <img class="pricing" src="Images/pricing.jpg" alt="pricing">
+        </section>
+  </main>
+</body>
+</html>
